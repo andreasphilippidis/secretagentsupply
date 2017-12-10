@@ -1,0 +1,113 @@
+/*global*/
+body{
+  display: block;
+  background-color: grey;
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 18px;
+  width: 960px;
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.column{
+  flex-direction: column;
+}
+/*header section*/
+header{
+  color: white;
+  background-color: #000000;
+  width: 100%;
+  height: auto;
+}
+
+header img{
+  height: 1.5rem;
+  width: auto;
+  padding-left: .5rem;
+  padding-right: 1rem;
+}
+
+header p{
+  font-size: 1rem;
+  text-align: left;
+  flex-grow: 1;
+  padding: .66rem 0;
+}
+
+/*main section*/
+.main{
+  background-color: white;
+}
+
+/*banner*/
+.banner{
+  height: 25rem;
+  width: auto;
+  background-image: url(C:/users/Ραφαέλλα/Desktop/secretagentsupply/resources/images/moto.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner .new-arrivals{
+  color: white;
+  background-color: #000000;
+  width: 20rem;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+}
+
+.new-arrivals p{
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: .25rem;
+}
+
+.new-arrivals h1{
+  font-size: 2rem;
+}
+
+/*navigation section*/
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  background-color: firebrick;
+}
+
+nav li{
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+}
+/*products section*/
+
+.products .product{
+  display: inline-block;
+}
+
+.product p{
+  background-color: #000000;
+  color: white;
+}
+
+/*locations and hours section*/
+
+.location, .hours{
+  background-color: #000000;
+  color: white;
+}
+
+/*footer section*/
+
+footer{
+  background-color: #000000;
+  color: white;
+}
