@@ -2,73 +2,93 @@
 body{
   display: block;
   background-color: grey;
+  padding: 0;
   margin: 0;
   font-family: Helvetica;
   font-size: 18px;
-  width: 960px;
-}
-
-.flex-container{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .column{
   flex-direction: column;
 }
 /*header section*/
-header{
-  color: white;
-  background-color: #000000;
+.header-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  background-color: #000000
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 960px;
   height: auto;
 }
 
 header img{
+  display: inline-block;
   height: 1.5rem;
-  width: auto;
   padding-left: .5rem;
   padding-right: 1rem;
 }
 
 header p{
+  display: inline-block;
   font-size: 1rem;
-  text-align: left;
   flex-grow: 1;
   padding: .66rem 0;
 }
 
 /*main section*/
 .main{
-  background-color: white;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 /*banner*/
 .banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 25rem;
-  width: auto;
-  background-image: url(C:/users/Ραφαέλλα/Desktop/secretagentsupply/resources/images/moto.jpeg);
+  width: 100%;
+  background-image: url(/users/imac/desktop/secretagentsupply/resources/images/moto.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.banner .new-arrivals{
-  color: white;
+.message-slider{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 960px;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: #000000;
-  width: 20rem;
-  margin-top: 9rem;
+  color: #ffffff;
+  /*margin-top: 9rem;*/
   padding: 2rem 3rem;
 }
 
-.new-arrivals p{
+.message h2{
+  display: block;
   font-size: 1rem;
   font-weight: bold;
   padding-bottom: .25rem;
 }
 
-.new-arrivals h1{
+.message h1{
+  display: block;
   font-size: 2rem;
 }
 
@@ -76,38 +96,121 @@ header p{
 
 nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  color: white;
-  background-color: firebrick;
+  background-color: #b22222;
 }
 
-nav li{
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  color: #ffffff;
+}
+
+ul li{
   display: inline-block;
   font-size: 1rem;
   padding: 0.75rem 0;
 }
 /*products section*/
 
-.products .product{
-  display: inline-block;
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0rem;
+  background-color: #ffffff;
 }
 
+
+.product-slider{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: pink;
+  padding: 0;
+  border: solid 4px #000000;
+}
+
+.product img{
+  display: inline-block;
+  height: 9rem;
+  width: auto;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+
+#glasses{
+  width: 30%;
+  height: auto;
+}
 .product p{
+  display: inline-block;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
   background-color: #000000;
-  color: white;
 }
 
 /*locations and hours section*/
+.findus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.findus-slider{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+}
 
 .location, .hours{
+  width: 35%;
+}
+
+.location span, .hours span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
   background-color: #000000;
-  color: white;
+  color: #ffffff;
 }
 
 /*footer section*/
 
 footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
   background-color: #000000;
-  color: white;
+  color: #ffffff;
 }
+ footer .slider{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 960px;
+ }
