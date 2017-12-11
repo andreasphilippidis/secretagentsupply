@@ -142,16 +142,10 @@ footer{
   nav .tablet-size{
     display: none;
   }
-  .products .tablet-size{
-    display: none;
-  }
 }
 @media only screen and (max-width: 1024px){/*width<1024px*/
   /*hide these*/
-  nav .container{
-    display: none;
-  }
-  .products .product{
+  nav .container, .products .product.glasses{
     display: none;
   }
   /*show these*/
@@ -161,14 +155,51 @@ footer{
     align-items: center;
     padding: .75rem .5rem;
   }
-  .products .tablet-size{
+  .product {
     width: 47%;
   }
-  .products .tablet-size span{
-    display: block;
-    padding: 0.5rem;
+}
+@media only screen and (max-width: 470px){/*width<470px*/
+  /*hide these*/
+  nav .container, .products .product.glasses, .products .product.watch{
+    display: none;
+  }
+  /*show these*/
+  .banner {
+    height: 15rem;
+  }
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem; /*offset from natural position*/
+  }
+  .headline h4 {
+    font-size: .77rem;
+    padding-bottom: .25rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+  nav .tablet-size{
+    align-items: center;
+  }
+  .products {
+    justify-content: center;
+  }
+  .product {
+    width: 90%;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 0 0 0;
+  }
+  .info {
+    margin-top: .5rem;
+    width: 100%;
+  }
+  footer{
     text-align: center;
-    color: #ffffff;
-    background-color: #000000;
   }
 }
