@@ -70,22 +70,6 @@ nav .container{
   justify-content: space-between;
   padding: .75rem .5rem;
 }
-@media only screen and (min-width: 1024px){
-  nav .tablet-size{
-    display: none;
-  }
-}
-@media only screen and (max-width: 1024px){
-  nav .container{
-    display: none;
-  }
-  nav .tablet-size{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .75rem .5rem;
-  }
-}
 
 /*products section*/ /*done*/
 
@@ -149,4 +133,42 @@ footer{
   color: #ffffff;
   padding: 5rem .5rem;
   margin-top: 4rem;
+}
+
+/*responsive design elements*/
+
+@media only screen and (min-width: 1024px){/*width>=1024px*/
+  /*hide these*/
+  nav .tablet-size{
+    display: none;
+  }
+  .products .tablet-size{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px){/*width<1024px*/
+  /*hide these*/
+  nav .container{
+    display: none;
+  }
+  .products .product{
+    display: none;
+  }
+  /*show these*/
+  nav .tablet-size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem .5rem;
+  }
+  .products .tablet-size{
+    width: 47%;
+  }
+  .products .tablet-size span{
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+  }
 }
