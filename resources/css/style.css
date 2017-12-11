@@ -1,216 +1,136 @@
 /*global*/
-body{
+body {
   display: block;
-  background-color: grey;
+  background-color: #ffffff;
   padding: 0;
-  margin: 0;
+  /*font*/
   font-family: Helvetica;
   font-size: 18px;
 }
-
-.column{
-  flex-direction: column;
-}
-/*header section*/
-.header-slider{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #000000
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*header section*/ /*done*/
+
+header {
   color: #ffffff;
-  width: 960px;
-  height: auto;
+  background-color: #000000;
 }
-
-header img{
-  display: inline-block;
+header .container {
+  display: flex;
+  align-items: center;
+  padding: .75rem 0;
+}
+header img {
   height: 1.5rem;
   padding-left: .5rem;
-  padding-right: 1rem;
+  border: none;
 }
-
-header p{
-  display: inline-block;
+header span {
   font-size: 1rem;
-  flex-grow: 1;
-  padding: .66rem 0;
+  padding: .66rem 0 .66rem 1rem;
 }
 
-/*main section*/
-.main{
-  width: 100%;
-  background-color: #ffffff;
-}
+/*banner*/ /*done*/
 
-/*banner*/
-.banner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.banner {
   height: 25rem;
-  width: 100%;
   background-image: url(/users/imac/desktop/secretagentsupply/resources/images/moto.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.message-slider{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 960px;
-}
-
-.message{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+.headline {
   background-color: #000000;
   color: #ffffff;
-  /*margin-top: 9rem;*/
+  width: 20rem;
   padding: 2rem 3rem;
+  position: relative;
+  top: 9rem; /*offset from natural position*/
 }
-
-.message h2{
-  display: block;
+.headline h4 {
   font-size: 1rem;
-  font-weight: bold;
   padding-bottom: .25rem;
 }
-
-.message h1{
-  display: block;
+.headline h1 {
   font-size: 2rem;
 }
 
-/*navigation section*/
+/*navigation section*/ /*done*/
 
-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+nav {
   background-color: #b22222;
-}
-
-
-nav ul{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 960px;
   color: #ffffff;
 }
-
-ul li{
-  display: inline-block;
-  font-size: 1rem;
-  padding: 0.75rem 0;
-}
-/*products section*/
-
-.products{
+nav .container{
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 3rem 0rem;
-  background-color: #ffffff;
+  justify-content: space-between;
+  padding: .75rem .5rem;
 }
 
+/*products section*/ /*done*/
 
-.product-slider{
+.products {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 960px;
+  margin: 3rem 0rem;
 }
-
-.product{
+.product {
+  width: 30%;
+}
+.product-img {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  background-color: pink;
-  padding: 0;
+  height: 9rem;
+  padding: 2rem 0;
   border: solid 4px #000000;
 }
-
-.product img{
-  display: inline-block;
-  height: 9rem;
-  width: auto;
-  padding: 2rem 0;
-  background-color: #ffffff;
+.product-img img{
+  max-width: 8rem;
 }
-
-#glasses{
-  width: 30%;
-  height: auto;
-}
-.product p{
-  display: inline-block;
-  padding: 0.5rem 0;
-  width: 100%;
+.product span{
+  display: block;
+  padding: 0.5rem;
   text-align: center;
   color: #ffffff;
   background-color: #000000;
 }
 
-/*locations and hours section*/
-.findus{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-}
+/*info section*/ /*done*/
 
-.findus-slider{
+.contact-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 960px;
+  margin: 3rem 0 0 0;
 }
-
-.location, .hours{
+.info {
   width: 35%;
 }
-
-.location span, .hours span{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.info span{
+  display: block;
   padding: 1rem 2rem;
+  text-align: center;
+  border-right: solid 4px #000000;
+  border-left: solid 4px #000000;
+  border-bottom: solid 4px #000000;
+}
+.info .title {
+  display: block;
+  padding: 1rem 2rem;
+  text-align: center;
   background-color: #000000;
   color: #ffffff;
 }
 
-/*footer section*/
+/*footer section*/ /*done*/
 
 footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 0;
   background-color: #000000;
   color: #ffffff;
+  padding: 5rem .5rem;
+  margin-top: 4rem;
 }
- footer .slider{
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   width: 960px;
- }
